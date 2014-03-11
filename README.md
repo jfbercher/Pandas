@@ -24,3 +24,20 @@ df['one'].map(lambda x: x>=1)
 
 df.applymap(lambda x: x>=1)
 ```   
+
+To read/write in CSV data:
+```
+import pandas
+df = pandas.read_csv("datafile.csv")
+df.to_csv("outpout.csv")
+```
+
+
+<p> <B> pandas + SQL </b> </p>
+```
+import pandas
+import pandasql
+df = pandas.read_csv('file.csv')
+df.rename(columns = lambda x: x.replace(' ', '_').lower(), inplace=True)
+dsel = pandasql.sqldf('SELECT * FROM df LIMIT 20')
+```
