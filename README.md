@@ -41,3 +41,8 @@ df = pandas.read_csv('file.csv')
 df.rename(columns = lambda x: x.replace(' ', '_').lower(), inplace=True)
 dsel = pandasql.sqldf('SELECT * FROM df LIMIT 20')
 ```
+
+Aggregate Query:
+SELECT district,sum(aadhaar_generated) FROM aadhaar_data GROUP BY district;
+
+
