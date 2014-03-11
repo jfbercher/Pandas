@@ -43,6 +43,32 @@ dsel = pandasql.sqldf('SELECT * FROM df LIMIT 20')
 ```
 
 Aggregate Query:
-SELECT district,sum(aadhaar_generated) FROM aadhaar_data GROUP BY district;
+```
+SELECT district,sum(aadhaar_generated) 
+FROM aadhaar_data 
+GROUP BY district;
+```
 
+JSON is similar to python dictionary, but not equivalent
+
+To request data from API:
+```
+import json
+import requests
+
+if __name__ == "__main__":
+   url = ''
+   data = requests.get(url).text
+
+   # next, convert text format data to python dictionary:
+   data = json.loads(data)
+
+   print type(data)
+   print data
+
+```
+
+last.fm API: 
+?methpd=..
+?api_key=..
 
