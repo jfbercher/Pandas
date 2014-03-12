@@ -78,4 +78,12 @@ df.describe() ==> gives summary info for all columns
     info includes: count, mean, std, min, perc quantiles, max
 
 
-
+<p> Dealing with missing values: </p>
+<ol>
+<li> partial deletion </li>
+<li> imputation </li>
+<ul>
+<li> using mean </li>
+<li> linear regression with other columns </li>
+</ul>
+</ol>
