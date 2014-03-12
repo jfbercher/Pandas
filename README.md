@@ -72,3 +72,10 @@ last.fm API:
 ?methpd=..
 ?api_key=..
 
+<p> Pandas describe function</p>
+
+df.describe() ==> gives summary info for all columns
+    info includes: count, mean, std, min, perc quantiles, max
+
+
+
