@@ -13,7 +13,7 @@ sudo apt-get install python-pandas
 ```
 import pandas as ps
 d = {'one': ps.Series([1,2,3], index=['a', 'b', 'c']),
-     'two': ps.Series([1,2,3,4], index=['a', 'b', 'c'])}
+     'two': ps.Series([1,2,3,4], index=['a', 'b', 'c'i, 'd'])}
 
 df = ps.DataFrame(d)
 
@@ -32,6 +32,12 @@ df = pandas.read_csv("datafile.csv")
 df.to_csv("outpout.csv")
 ```
 
+```
+df.sum()  ==> Sum of each column, removes NAs by default
+df.mean() 
+df.dropna()  ! option: how='all'
+df.fillna(val)
+```
 
 <p> <B> pandas + SQL </b> </p>
 ```
