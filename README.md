@@ -101,3 +101,21 @@ df.describe() ==> gives summary info for all columns
 <li> linear regression with other columns </li>
 </ul>
 </ol>
+
+Two sample t-test:
+t=(mu1 - mu2) / sqrt(var1/N1 + var2/N2)
+
+nu = (var1/N1 + var2/N2) / (var1^2/(N1^2*nu1) + var2^2/(N2^2*nu2))
+
+p-value: probablity of obtaiing a test statistic at <b>least</b> as
+extreme as ours if null hypothesis was true
+
+<b> Welch's t-test in Python: </b>
+```
+import scipy.stats
+scipy.stats.ttest_ind(list1, list2, equal_var=False)
+
+For a one-sided t-test:
+
+```
+
