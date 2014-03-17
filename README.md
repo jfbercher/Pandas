@@ -93,6 +93,7 @@ df.describe() ==> gives summary info for all columns
 
 
 <p> Dealing with missing values: </p>
+
 <ol>
 <li> partial deletion </li>
 <li> imputation </li>
@@ -115,7 +116,10 @@ extreme as ours if null hypothesis was true
 import scipy.stats
 scipy.stats.ttest_ind(list1, list2, equal_var=False)
 
-For a one-sided t-test:
-
 ```
 
+For a one-sided t-test:
+symmetric distn.: one-sided p-value = half of 2-sided p-value
+
+to check whether mu1 > mu2: p/2<p_critical, and t>0
+and for mu1<m2: p/2 < p_critical, and t<0
