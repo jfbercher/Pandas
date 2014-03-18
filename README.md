@@ -117,6 +117,7 @@ import scipy.stats
 scipy.stats.ttest_ind(list1, list2, equal_var=False)
 
 ```
+link: http://docs.scipy.org/doc/scipy/reference/stats.html
 
 For a one-sided t-test:
 symmetric distn.: one-sided p-value = half of 2-sided p-value
