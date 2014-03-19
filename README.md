@@ -124,3 +124,14 @@ symmetric distn.: one-sided p-value = half of 2-sided p-value
 
 to check whether mu1 > mu2: p/2<p_critical, and t>0
 and for mu1<m2: p/2 < p_critical, and t<0
+
+<h4> Non Parametric u-test</h4>
+A statistical test that does not assume our data is drawn from any particular probablity distn.
+
+Mann-Whitney u-test: tests null hypothesis that two populations are the same
+
+u,p = scipy.stats.Mannwhitneyu(X,Y)
+
+<h4> Non-normal data </h4>
+Shapiro-wilk test:
+w,p = scipy.stats.shapiro(data)
