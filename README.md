@@ -142,11 +142,17 @@ R2 = 1 - Sum(yi-fi)^2 / Sum(yi - ymean)^2
 <h3> Plotting with ggplot: </h3>
 ggplot: grammer of graphics
 
-Step1: Create a plot:
+<b>Step1: Create a plot: </b>
 ```
   ggplot(dataframe, aes(xvar, yvar))
+  or
+  ggplot(dataframe, aes(xvar, yvar, color=categoric_var))
 ```
-Step2: Represent data with geometric objects
+<b>Step2: Represent data with geometric objects</b>
 ```
    + geom_point(color='coral') + geom_line(color='coral')
+```
+<b>Step3: Add labels</b>
+```
+   + ggtitle('title') + xlab('x-label') + ylab('y-label')
 ```
