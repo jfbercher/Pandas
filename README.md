@@ -156,3 +156,15 @@ ggplot: grammer of graphics
 ```
    + ggtitle('title') + xlab('x-label') + ylab('y-label')
 ```
+
+<h3> Pandas Datetime </h3>
+```
+  df.date = df.to_datetime('date_column_in_string') # for example: 2012-05-03
+
+  to_datetime(['2005/11/23', '2010.12.31'])
+
+  import datetime as dtm
+  dates = [dtm.datetime(2012, 5, 1), dtm.datetime(2012, 5, 2), dtm.datetime(2012, 5, 3)]
+  ts = ps.Series(np.random.randn(3), dates)
+  
+```
