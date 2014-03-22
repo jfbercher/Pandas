@@ -138,3 +138,15 @@ w,p = scipy.stats.shapiro(data)
 
 <h4> Coefficient of Determination: R-Squared</h4>
 R2 = 1 - Sum(yi-fi)^2 / Sum(yi - ymean)^2
+
+<h3> Plotting with ggplot: </h3>
+ggplot: grammer of graphics
+
+Step1: Create a plot:
+```
+  ggplot(dataframe, aes(xvar, yvar))
+```
+Step2: Represent data with geometric objects
+```
+   + geom_point(color='coral') + geom_line(color='coral')
+```
