@@ -135,3 +135,6 @@ u,p = scipy.stats.Mannwhitneyu(X,Y)
 <h4> Non-normal data </h4>
 Shapiro-wilk test:
 w,p = scipy.stats.shapiro(data)
+
+<h4> Coefficient of Determination: R-Squared</h4>
+$R2 = 1 - \frac{1}{n}$
