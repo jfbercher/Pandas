@@ -137,4 +137,4 @@ Shapiro-wilk test:
 w,p = scipy.stats.shapiro(data)
 
 <h4> Coefficient of Determination: R-Squared</h4>
-$R2 = 1 - \frac{1}{n}$
+R2 = 1 - Sum(yi-fi)^2 / Sum(yi - ymean)^2
