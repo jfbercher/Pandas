@@ -168,3 +168,4 @@ ggplot: grammer of graphics
   ts = ps.Series(np.random.randn(3), dates)
   
 ```
+

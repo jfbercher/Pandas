@@ -1,0 +1,2 @@
+cat datafile | python mapred.mapper_wordcount.py | sort | python mapred.reducer_wordcount.py
+cat README.md | python examples/mapred.mapper_wordcount.py | sort  | python examples/mapred.reducer_wordcount.py 
