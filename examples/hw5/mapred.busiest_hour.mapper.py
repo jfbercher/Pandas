@@ -32,7 +32,7 @@ def mapper():
             n=1
             logging.info(data)
             continue
-        print "{0}\t{1}\t{2}\t{3}".format(data[1], data[6], data[3], data[4])        
+        print "{0}\t{1}\t{2}\t{3}".format(data[1], data[6], data[2], data[3]) 
 
 mapper()
 
