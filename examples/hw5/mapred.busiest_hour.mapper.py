@@ -25,8 +25,14 @@ def mapper():
     """
 
 
+    n=0
     for line in sys.stdin:
-        
+        data = line.strip().split(",")
+        if n==0:
+            n=1
+            logging.info(data)
+            continue
+        print "{0}\t{1}\t{2}\t{3}".format(data[1], data[6], data[3], data[4])        
 
 mapper()
 
